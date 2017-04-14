@@ -49,7 +49,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     document.getElementById('email-invalid').style.display = 'block';
     return false;
   } else {
-    picUploadJs(event.parentNode)
+    picUploadJs(event.parentNode);
     var url = event.target.action;  //
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
